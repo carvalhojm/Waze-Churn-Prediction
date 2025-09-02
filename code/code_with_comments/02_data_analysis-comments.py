@@ -9,7 +9,7 @@ import seaborn as sns
 # %%
 # loading data
 
-df = pd.read_csv("data/waze_dataset.csv")
+df = pd.read_csv("../../data/waze_dataset.csv")
 
 # %%
 df.head(10)

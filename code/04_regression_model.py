@@ -12,7 +12,7 @@ from sklearn.linear_model import LogisticRegression
 import sklearn.metrics as metrics
 
 # %%
-df = pd.read_csv("data/waze_dataset.csv")
+df = pd.read_csv("../data/waze_dataset.csv")
 
 # %%
 # exploring data
