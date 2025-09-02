@@ -4,7 +4,7 @@ import pandas as pd
 from scipy import stats
 
 # %%
-df = pd.read_csv("data/waze_dataset.csv")
+df = pd.read_csv("../data/waze_dataset.csv")
 
 # %%
 df.head()

@@ -14,7 +14,7 @@ import sklearn.metrics as metrics
 # recall_score, f1_score, confusion_matrix, ConfusionMatrixDisplay
 
 # %%
-df = pd.read_csv("data/waze_dataset.csv")
+df = pd.read_csv("../../data/waze_dataset.csv")
 
 # %%
 # exploring data
@@ -363,7 +363,7 @@ sns.barplot(x=[x[1] for x in features_importance],
             y=[x[0] for x in features_importance],
             hue= [x[0] for x in features_importance],
             orient="h", legend=False, ax=axes[0])
-axes[0].set_title("Feature importance - Fisrt model (53% churn precision & 9% recall)", fontsize=15)
+axes[0].set_title("Feature importance - First model (53% churn precision & 9% recall)", fontsize=15)
 axes[0].set_xlabel("churn probability", fontsize=12)
 
 sns.barplot(x=[x[1] for x in features_importance2],
@@ -376,9 +376,9 @@ plt.tight_layout()
 plt.show()
 
 # Since there is a significant difference in churn identification accuracy between the two models, the results are expected to be inconsistent.
-# In the first model, the device would be the most decisive factor in increasing the likelihood of churn, while activity days and professional drivers would be the factors that decrease the likelihood of churn.
+# In the first model, the device would be the most decisive factor in decrease the likelihood of churn, while activity days and professional drivers would be the factors that increase the likelihood of churn.
 # In the second model, there are no significant results that increase the likelihood of churn, while professional drivers, diversion, and activity days would decrease the likelihood of churn.
-# Both results contradict the indicators found previously during the project. However, in terms of future importance, the first graph would be more reliable, since the Precision Score for churn users is 53% compared to 24% in the second model.
+# In terms of future importance, the first graph would be more reliable, since the Precision Score for churn users is 53% compared to 24% in the second model.
 
 # %%
 # FINAL CONSIDERATIONS

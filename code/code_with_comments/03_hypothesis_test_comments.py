@@ -6,16 +6,16 @@ import pandas as pd
 from scipy import stats
 
 # %%
-df = pd.read_csv("data/waze_dataset.csv")
+df = pd.read_csv("../../data/waze_dataset.csv")
 
 # %%
 df.head()
 # %%
-# crating a map dictionary
+# creating a map dictionary
 map_dictionary = {"iPhone":2, "Android":1}
 
 # %%
-# crating a new device type column
+# creating a new device type column
 df["device_type"] = df["device"].map(map_dictionary)
 df.head()
 
@@ -26,7 +26,7 @@ df.groupby(["device_type"])["drives"].mean()
 # and the Android users is about 67
 # %%
 # Hypothesis testing
-# the goal is to oconduct a two-sample t-test.
+# the goal is to conduct a two-sample t-test.
 
 # Steps for constructing a hypothesis test:
 
