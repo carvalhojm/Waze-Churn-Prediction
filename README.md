@@ -70,10 +70,10 @@ Initially, `activity_days` and drivers who drive professionally for longer dista
 
 Despite all the effort, the scores were lower than ideally desired. Even using techniques to increase recall, the other indicators dropped even further.
 
-## 📈 *Business Recommendations*
+## 💡 *Business Recommendations*
 
 Based on the analysis, Waze could:
-- Collecting more personal information about users could help improve the model.
+- Collect more personal information about users could help improve the model.
 - Use the current model by adjusting the threshold to increase recall in low-investment campaigns: banners and email marketing.
 
 ## 🛠️ *Tech Stack*
