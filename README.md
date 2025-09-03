@@ -73,7 +73,7 @@ Despite all the effort, the scores were lower than ideally desired. Even using t
 ## 💡 *Business Recommendations*
 
 Based on the analysis, Waze could:
-- Collecting more personal information about users could help improve the model.
+- Collect more personal information about users could help improve the model.
 - Use the current model by adjusting the threshold to increase recall in low-investment campaigns: banners and email marketing.
 
 ## 🛠️ *Tech Stack*
