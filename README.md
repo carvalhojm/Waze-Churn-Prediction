@@ -46,27 +46,28 @@ The complete document to access the integrated analysis is: [`waze_case_study.ip
 ## 📊 *Data Description*
 The dataset (waze_dataset.csv) contains simulated information on Waze user behavior.
 - Target variable: `label` (categorical: retained, churned).
+
 ⚠️ *Note: This dataset is for educational use only and was provided as part of the Coursera project.*
 
 ## 🔎 *Data Analysis and Machine Learning Models*
 
-Checked for missing values and outliers.
-Explored user activity patterns and compared churned vs. retained groups.
-Performed hypothesis tests to validate assumptions about churn behavior.
-Feature engineering applied to create useful variables for models
-The following models were implemented and compared: 
-- Logistic Regression
-- Random Forest
-- XGBoos
-Key metrics in model evaluation: Recall and Precision.
-Cross-validation applied to validate results.
+- Checked for missing values and outliers.
+- Explored user activity patterns and compared churned vs. retained groups.
+- Performed hypothesis tests to validate assumptions about churn behavior.
+- Feature engineering applied to create useful variables for models
+- The following models were implemented and compared: Logistic Regression, Random Fores and XGBoost
+- Key metrics in model evaluation: Recall and Precision.
+- Cross-validation applied to validate results.
 
 ## 📈 *Results & Insights*
 
-Best performing model: XGBoost (highest Recall Score 20%).
-Key predictors of churn: `km_per_hour`, `n_days_after_onboarding`, `percent_sessions_in_last_month`.
+- Best performing model: XGBoost (highest Recall Score 20%).
+- Key predictors of churn: `km_per_hour`, `n_days_after_onboarding`, `percent_sessions_in_last_month`.
+
 Logistic Regression provided interpretability, while Random Forest and XGBoost offered stronger predictive performance.
+
 Initially, `activity_days` and drivers who drive professionally for longer distances include more direct indicators of turnover rate.
+
 Despite all the effort, the scores were lower than ideally desired. Even using techniques to increase recall, the other indicators dropped even further.
 
 ## 📈 *Business Recommendations*
@@ -80,4 +81,5 @@ Based on the analysis, Waze could:
 - Programming Language: Python 3.13.5
 - Libraries: pandas, numpy, scipy, matplotlib, seaborn, scikit-learn, imblearn, xgboost
 - Environment: Jupyter Notebook / VS Code
+
 *The versions of the libraries used are available at: `requirements.txt`*
