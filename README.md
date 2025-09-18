@@ -12,7 +12,7 @@ The goal of this project is to predict whether a Waze user will churn (stop usin
 
 The complete document to access the integrated analysis is: [`waze_case_study.ipynb`](https://github.com/carvalhojm/waze-data-scientist-project/blob/main/waze_case_study.ipynb)
 
-The summary of the project presentation in PDF format is available at:: [`Waze-Churn-Prediction.pdf`](https://github.com/carvalhojm/waze-data-scientist-project/blob/main/Waze-Churn-Prediction.pdf)
+The summary of the project presentation in PDF format is available at: [`Waze-Churn-Prediction.pdf`](https://github.com/carvalhojm/waze-data-scientist-project/blob/main/Waze-Churn-Prediction.pdf)
 
 ---
 
@@ -37,6 +37,7 @@ The summary of the project presentation in PDF format is available at:: [`Waze-C
 │   └── waze_dataset.csv         # Dataset provided for the capstone
 │
 ├── waze_case_study.ipynb        # Jupyter notebook with integrated analysis
+├── Waze-Churn-Prediction.pdf    # Presentation PDF with general insights
 ├── README.md                    # Project documentation
 ├── .requirements.txt            # Python dependencies
 ├── .gitignore                   # Files ignored by Git
@@ -76,6 +77,7 @@ Initially, `activity_days` and drivers who drive professionally for longer dista
 
 Despite all the effort, the scores were below ideal. Other techniques were used to increase recall, such as balancing and threshold adjustment, but the other indicators fell.
 
+Confusion Matrix:
 !["Confusion Matrix"](https://i.imgur.com/tqz8PUS.png)
 
 ## 💡 *Business Recommendations*
