@@ -12,6 +12,8 @@ The goal of this project is to predict whether a Waze user will churn (stop usin
 
 The complete document to access the integrated analysis is: [`waze_case_study.ipynb`](https://github.com/carvalhojm/waze-data-scientist-project/blob/main/waze_case_study.ipynb)
 
+The summary of the project presentation in PDF format is available at:: [`Waze-Churn-Prediction.pdf`](https://github.com/carvalhojm/waze-data-scientist-project/blob/main/Waze-Churn-Prediction.pdf)
+
 ---
 
 ## 🎯 *Objectives*  
@@ -47,6 +49,8 @@ The complete document to access the integrated analysis is: [`waze_case_study.ip
 The dataset (waze_dataset.csv) contains simulated information on Waze user behavior.
 - Target variable: `label` (categorical: retained, churned).
 
+![](https://i.imgur.com/KghRSBU.png)
+
 ⚠️ *Note: This dataset is for educational use only and was provided as part of the Coursera project.*
 
 ## 🔎 *Data Analysis and Machine Learning Models*
@@ -68,7 +72,11 @@ Logistic Regression provided interpretability, while Random Forest and XGBoost o
 
 Initially, `activity_days` and drivers who drive professionally for longer distances include more direct indicators of turnover rate.
 
-Despite all the effort, the scores were lower than ideally desired. Even using techniques to increase recall, the other indicators dropped even further.
+![](https://i.imgur.com/WuC5TTe.png)
+
+Despite all the effort, the scores were below ideal. Other techniques were used to increase recall, such as balancing and threshold adjustment, but the other indicators fell.
+
+!["Confusion Matrix"](https://i.imgur.com/tqz8PUS.png)
 
 ## 💡 *Business Recommendations*
 
